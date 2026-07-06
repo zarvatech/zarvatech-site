@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zarvatech — Custom Software, AI & Automation Company</title>
+<meta name="description" content="Zarvatech builds custom software, AI, and automation for real-world problems — plus digitization, technical consulting, and SEO. From idea to a product people use.">
+<meta name="keywords" content="custom software development, AI solutions, automation, digitization, software consulting, SEO, full-stack development, Zarvatech">
+<meta name="author" content="Zarvatech">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#3b63e6">
+<link rel="canonical" href="https://zarvatech.in/">
+
+<!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zarvatech">
+<meta property="og:title" content="Zarvatech — Custom Software, AI & Automation Company">
+<meta property="og:description" content="We build custom software, AI, and automation for real-world problems — from full-stack products to digitizing operations, with consulting and SEO.">
+<meta property="og:url" content="https://zarvatech.in/">
+<meta property="og:image" content="https://zarvatech.in/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zarvatech — Custom Software, AI & Automation Company">
+<meta name="twitter:description" content="We build custom software, AI, and automation for real-world problems — from full-stack products to digitizing operations, with consulting and SEO.">
+<meta name="twitter:image" content="https://zarvatech.in/og-image.png">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zarvatech",
+  "url": "https://zarvatech.in/",
+  "email": "info@zarvatech.in",
+  "description": "Zarvatech builds custom software, AI, and automation for real-world problems — plus digitization, technical consulting, and SEO.",
+  "sameAs": [
+    "https://linkedin.com/in/abhishek-t98/"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Zarvatech",
+  "url": "https://zarvatech.in/",
+  "email": "info@zarvatech.in",
+  "areaServed": "Worldwide",
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom Software Development"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Solutions"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Digitization"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Automation"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Software Consulting"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO & Web Presence"}}
+  ]
+}
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#eef1f6;
+    --bg-elev:#ffffff;
+    --line:#dde2ec;
+    --line-bright:#c6cdda;
+    --ink:#1a2233;
+    --ink-dim:#556074;
+    --ink-faint:#8a93a6;
+    --signal:#3b63e6;
+    --signal-deep:#2947c9;
+    --violet:#7c5cf5;
+    --cyan:#1eb5c4;
+    --amber:#e0872f;
+    --display:'Space Grotesk',sans-serif;
+    --mono:'JetBrains Mono',monospace;
+    --body:'Inter',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;background:var(--bg)}
+  body{
+    background:transparent;color:var(--ink);font-family:var(--body);line-height:1.6;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;position:relative;z-index:0;
+  }
+  /* continuous page-wide background — makes sections feel like one canvas */
+  .page-bg{position:fixed;inset:0;z-index:-2;pointer-events:none;overflow:hidden}
+  .page-bg .grid{
+    position:absolute;inset:-2px;opacity:.5;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:60px 60px;
+    -webkit-mask-image:linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);
+    mask-image:linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);
+  }
+  .page-bg .blob{position:absolute;border-radius:50%;filter:blur(120px);opacity:.07}
+  .page-bg .b1{width:400px;height:400px;background:var(--signal-deep);top:12%;left:-12%;animation:wander1 34s ease-in-out infinite}
+  .page-bg .b2{width:360px;height:360px;background:var(--violet);top:44%;right:-14%;animation:wander2 40s ease-in-out infinite}
+  .page-bg .b3{width:380px;height:380px;background:var(--signal-deep);top:78%;left:18%;animation:wander3 46s ease-in-out infinite}
+  @keyframes wander1{0%,100%{transform:translate(0,0)}50%{transform:translate(80px,60px)}}
+  @keyframes wander2{0%,100%{transform:translate(0,0)}50%{transform:translate(-70px,80px)}}
+  @keyframes wander3{0%,100%{transform:translate(0,0)}50%{transform:translate(60px,-70px)}}
+  ::selection{background:var(--signal);color:#fff}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 32px}
+
+  /* ---- NAV ---- */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:20px 32px;background:rgba(238,241,246,.8);backdrop-filter:blur(14px);
+    border-bottom:1px solid transparent;transition:border-color .3s;
+  }
+  nav.scrolled{border-bottom:1px solid var(--line)}
+  .brand{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.02em;display:flex;align-items:center;gap:9px}
+  .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--signal);box-shadow:0 0 12px var(--signal);animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.8)}}
+  .navlinks{display:flex;gap:28px;font-family:var(--mono);font-size:13px;color:var(--ink-dim)}
+  .navlinks a{transition:color .2s}
+  .navlinks a:hover{color:var(--signal)}
+  @media(max-width:680px){.navlinks{display:none}}
+
+  /* ---- HERO ---- */
+  header{min-height:100vh;display:flex;flex-direction:column;justify-content:center;position:relative;padding-top:110px;padding-bottom:40px;overflow:hidden}
+  header::after{content:"";position:absolute;bottom:0;left:0;right:0;height:180px;background:linear-gradient(to bottom,transparent,var(--bg));z-index:2;pointer-events:none}
+  .grid-bg{
+    position:absolute;inset:0;z-index:0;opacity:.8;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:58px 58px;animation:drift 40s linear infinite;
+    -webkit-mask-image:radial-gradient(ellipse 85% 65% at 50% 42%,#000 28%,transparent 74%);
+    mask-image:radial-gradient(ellipse 85% 65% at 50% 42%,#000 28%,transparent 74%);
+  }
+  @keyframes drift{to{background-position:58px 58px}}
+  /* floating orbs */
+  .orb{position:absolute;border-radius:50%;filter:blur(100px);opacity:.12;z-index:0}
+  .orb.a{width:400px;height:400px;background:var(--signal-deep);top:-80px;right:-60px;animation:float1 18s ease-in-out infinite}
+  .orb.b{width:340px;height:340px;background:var(--violet);bottom:-120px;left:-80px;animation:float2 22s ease-in-out infinite}
+  @keyframes float1{0%,100%{transform:translate(0,0)}50%{transform:translate(-40px,50px)}}
+  @keyframes float2{0%,100%{transform:translate(0,0)}50%{transform:translate(50px,-40px)}}
+  /* rising particles */
+  .particles{position:absolute;inset:0;z-index:1;pointer-events:none}
+  .particles span{position:absolute;bottom:-10px;width:3px;height:3px;border-radius:50%;background:var(--signal);opacity:0;animation:rise linear infinite}
+  @keyframes rise{0%{transform:translateY(0);opacity:0}10%{opacity:.7}90%{opacity:.7}100%{transform:translateY(-100vh);opacity:0}}
+
+  .hero-inner{position:relative;z-index:3}
+  /* two-column hero: text + terminal */
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+  @media(min-width:960px){.hero-grid{grid-template-columns:1.15fr .85fr;gap:48px}}
+  .hero-copy{min-width:0}
+  .hero-copy h1,.hero-copy .lede{max-width:100%;overflow-wrap:break-word}
+
+  /* ---- HERO TERMINAL ---- */
+  .term{width:100%;max-width:480px;justify-self:end;
+    background:#0f1420;border:1px solid #223049;border-radius:12px;overflow:hidden;
+    box-shadow:0 24px 60px rgba(26,34,51,.18),0 4px 14px rgba(26,34,51,.1);
+    opacity:0;animation:up .9s .55s forwards;font-family:var(--mono);font-size:13px}
+  .term .bar{display:flex;align-items:center;gap:7px;padding:11px 14px;background:#141b2b;border-bottom:1px solid #223049}
+  .term .bar i{width:10px;height:10px;border-radius:50%;display:block}
+  .term .bar .r{background:#ff5f57}.term .bar .y{background:#febc2e}.term .bar .g{background:#28c840}
+  .term .bar span{margin-left:8px;color:#5f6d86;font-size:11px}
+  .term .body{padding:18px 18px 22px;line-height:2.05;color:#c3cbdb;min-height:250px}
+  .term .ln{white-space:pre-wrap;word-break:break-word}
+  .term .ln.pr{color:#c3cbdb}
+  .term .ln.pr::before{content:"➜ ";color:#28c840}
+  .term .ln.cmt{color:#5f6d86}
+  .term .ln.ok{color:#8fe388}
+  .term .cursor{display:inline-block;width:7px;height:15px;background:var(--signal);vertical-align:-2px;margin-left:1px;animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  @media(max-width:959px){.term{display:none}}
+  .eyebrow{font-family:var(--mono);font-size:13px;color:var(--signal);letter-spacing:.04em;margin-bottom:28px;display:flex;align-items:center;gap:10px;opacity:0;animation:up .7s .1s forwards}
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--signal)}
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(38px,5vw,68px);line-height:1.02;letter-spacing:-.03em;margin-bottom:28px}
+  h1 span{display:inline-block;opacity:0;animation:up .8s forwards}
+  h1 .l1{animation-delay:.15s}
+  h1 .l2{animation-delay:.3s}
+  h1 .glow{color:var(--signal)}
+  .rotator{color:var(--violet);position:relative;display:inline-flex;align-items:baseline;justify-content:flex-start;vertical-align:baseline}
+  /* invisible sizer reserves width for the longest word so the line never reflows */
+  .rotator .sizer{visibility:hidden;pointer-events:none}
+  .rotator .word{position:absolute;left:0;top:0;white-space:nowrap}
+  @keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+  .lede{font-size:clamp(17px,2.2vw,21px);color:var(--ink-dim);max-width:600px;line-height:1.55;margin-bottom:40px;opacity:0;animation:up .8s .45s forwards}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:up .8s .6s forwards}
+  .btn{font-family:var(--mono);font-size:14px;padding:13px 22px;border-radius:7px;transition:all .2s;cursor:pointer;border:1px solid transparent}
+  .btn-primary{background:var(--signal);color:#fff;font-weight:500}
+  .btn-primary:hover{background:#2f52d8;transform:translateY(-2px);box-shadow:0 8px 28px rgba(59,99,230,.25)}
+  .btn-ghost{border-color:var(--line-bright);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--signal);color:var(--signal)}
+
+  .strip{position:relative;z-index:3;margin-top:48px;margin-bottom:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;opacity:0;animation:up .8s .75s forwards}
+  .strip .cell{
+    position:relative;padding:22px 22px 24px;border:1px solid var(--line);border-radius:14px;overflow:hidden;
+    background:linear-gradient(160deg,rgba(255,255,255,.9),rgba(248,250,253,.9));backdrop-filter:blur(8px);
+    box-shadow:0 1px 3px rgba(26,34,51,.04);
+    transition:transform .3s,border-color .3s,box-shadow .3s;
+  }
+  .strip .cell::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--signal),transparent);opacity:.5}
+  .strip .cell::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% -20%,rgba(59,99,230,.12),transparent 60%);opacity:0;transition:opacity .35s;pointer-events:none}
+  .strip .cell:hover{transform:translateY(-4px);border-color:var(--line-bright);box-shadow:0 10px 26px rgba(26,34,51,.08)}
+  .strip .cell:hover::after{opacity:1}
+  .strip .cell:nth-child(2)::before{background:linear-gradient(90deg,transparent,var(--violet),transparent)}
+  .strip .cell:nth-child(4)::before{background:linear-gradient(90deg,transparent,var(--violet),transparent)}
+  .strip .ci{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;margin-bottom:16px;border:1px solid var(--line-bright);color:var(--signal);background:rgba(59,99,230,.05)}
+  .strip .cell:nth-child(2) .ci,.strip .cell:nth-child(4) .ci{color:var(--violet);background:rgba(124,92,245,.05)}
+  .strip .num{font-family:var(--display);font-weight:600;font-size:20px;color:var(--ink);letter-spacing:-.02em}
+  .strip .lbl{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-top:6px;text-transform:uppercase;letter-spacing:.05em;line-height:1.4}
+  @media(max-width:680px){.strip{grid-template-columns:repeat(2,1fr)}}
+
+  section{padding:110px 0;position:relative}
+  /* soft gradient seam between sections instead of hard borders */
+  .seam{position:relative;height:1px;max-width:1100px;margin:0 auto}
+  .seam::before{content:"";position:absolute;left:32px;right:32px;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--line-bright) 20%,var(--signal-deep) 50%,var(--line-bright) 80%,transparent);opacity:.6}
+  .seam::after{content:"";position:absolute;left:50%;top:-2px;width:5px;height:5px;border-radius:50%;background:var(--signal);transform:translateX(-50%);box-shadow:0 0 12px var(--signal);animation:seamPulse 3s ease-in-out infinite}
+  @keyframes seamPulse{0%,100%{opacity:.4}50%{opacity:1}}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:56px}
+  .sec-tag{font-family:var(--mono);font-size:13px;color:var(--signal-deep)}
+  .sec-title{font-family:var(--display);font-weight:600;font-size:clamp(26px,4vw,40px);letter-spacing:-.02em}
+
+  /* ---- ABOUT ---- */
+  #about{position:relative;overflow:hidden}
+  .about-anim{position:absolute;pointer-events:none;z-index:0}
+  .about-anim svg{width:100%;height:100%;display:block;overflow:visible}
+  /* placement variants */
+  .about-anim.g-card{top:50%;right:-30px;transform:translateY(-50%);width:min(560px,46vw);aspect-ratio:1.1;opacity:.55}
+  .about-anim.g-tl{top:6%;left:2%;width:190px;aspect-ratio:1;opacity:.3}
+  .about-anim.g-bl{bottom:8%;left:8%;width:150px;aspect-ratio:1;opacity:.28}
+  .about-anim .edge{stroke:var(--signal);stroke-width:.6;fill:none;
+    stroke-dasharray:1;stroke-dashoffset:1;opacity:.3;
+    animation:drawEdge 16s ease-in-out infinite}
+  .about-anim .node{fill:var(--bg-elev);stroke:var(--signal);stroke-width:1;
+    opacity:0;animation:popNode 16s ease-in-out infinite}
+  .about-anim .node.v{stroke:var(--violet)}
+  .about-anim .node.c{stroke:var(--cyan)}
+  .about-anim .core{fill:var(--signal);filter:drop-shadow(0 0 4px var(--signal))}
+  @keyframes popNode{
+    0%,6%{opacity:0;transform:scale(.4)}
+    16%,84%{opacity:1;transform:scale(1)}
+    94%,100%{opacity:0;transform:scale(.4)}
+  }
+  @keyframes drawEdge{
+    0%,10%{stroke-dashoffset:1;opacity:0}
+    26%,82%{stroke-dashoffset:0;opacity:.28}
+    92%,100%{stroke-dashoffset:1;opacity:0}
+  }
+  .about-anim .node,.about-anim .core{transform-origin:center;transform-box:fill-box}
+  @media(max-width:760px){.about-anim.g-card{opacity:.38;right:-110px}.about-anim.g-tl,.about-anim.g-bl{display:none}}
+  #about .wrap{position:relative;z-index:1}
+  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:64px}
+  .about-grid p{color:var(--ink-dim);font-size:17px;margin-bottom:20px}
+  .about-grid p strong{color:var(--ink);font-weight:500}
+  .stack-card{border:1px solid var(--line);border-radius:12px;padding:28px;background:linear-gradient(160deg,rgba(255,255,255,.85),rgba(248,250,253,.85));backdrop-filter:blur(8px);box-shadow:0 2px 10px rgba(26,34,51,.05)}
+  .stack-card h3{font-family:var(--mono);font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em;margin-bottom:18px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  .chip{font-family:var(--mono);font-size:12.5px;padding:6px 11px;border:1px solid var(--line-bright);border-radius:6px;color:var(--ink-dim)}
+  .chip.hot{border-color:var(--signal-deep);color:var(--signal)}
+  @media(max-width:760px){.about-grid{grid-template-columns:1fr;gap:36px}}
+
+  /* ---- SERVICES GRID ---- */
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .svc{border:1px solid var(--line);border-radius:14px;padding:28px;background:linear-gradient(160deg,rgba(255,255,255,.82),rgba(248,250,253,.82));backdrop-filter:blur(8px);position:relative;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s;box-shadow:0 1px 3px rgba(26,34,51,.04)}
+  .svc::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--signal),transparent);opacity:0;transition:opacity .3s}
+  .svc:hover::before{opacity:.6}
+  .svc::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 0%,rgba(59,99,230,.08),transparent 60%);opacity:0;transition:opacity .3s}
+  .svc:hover{transform:translateY(-4px);border-color:var(--line-bright);box-shadow:0 12px 30px rgba(26,34,51,.09)}
+  .svc:hover::after{opacity:1}
+  .svc .ic{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;margin-bottom:18px;border:1px solid var(--line-bright);color:var(--signal);position:relative;z-index:1}
+  .svc h3{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:-.01em;margin-bottom:9px;position:relative;z-index:1}
+  .svc p{color:var(--ink-dim);font-size:14.5px;position:relative;z-index:1}
+  .svc .tags{margin-top:14px;font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);position:relative;z-index:1}
+  @media(max-width:860px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.svc-grid{grid-template-columns:1fr}}
+
+  /* ---- EXPERTISE ROWS ---- */
+  .proj{position:relative;display:grid;grid-template-columns:80px 1fr;gap:28px;padding:44px 24px;margin:0 -24px;border-radius:14px;transition:background .3s,box-shadow .3s}
+  .proj::before{content:"";position:absolute;top:0;left:24px;right:24px;height:1px;background:linear-gradient(90deg,var(--line-bright),transparent)}
+  .proj:hover{background:linear-gradient(90deg,rgba(59,99,230,.05),rgba(59,99,230,.01) 60%,transparent);box-shadow:inset 0 0 0 1px rgba(59,99,230,.06)}
+  .proj-idx{font-family:var(--mono);font-size:14px;color:var(--signal-deep);padding-top:6px}
+  .proj-title{font-family:var(--display);font-weight:600;font-size:23px;letter-spacing:-.01em;margin-bottom:8px}
+  .proj-stack{font-family:var(--mono);font-size:12.5px;color:var(--ink-faint);margin-bottom:18px}
+  .proj-body{color:var(--ink-dim);font-size:15.5px;max-width:680px;margin-bottom:20px}
+  .proj-metrics{display:flex;flex-wrap:wrap;gap:30px}
+  .proj-metrics .m{display:flex;flex-direction:column}
+  .proj-metrics .mv{font-family:var(--display);font-weight:600;font-size:21px;color:var(--signal)}
+  .proj-metrics .ml{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-top:2px;text-transform:uppercase;letter-spacing:.04em}
+  @media(max-width:680px){.proj{grid-template-columns:1fr;gap:12px}.proj-idx{padding-top:0}}
+
+  /* ---- CONTACT ---- */
+  .contact{text-align:center;border:1px solid var(--line);border-radius:20px;padding:72px 32px;background:radial-gradient(ellipse at 50% 0%,rgba(59,99,230,.08),transparent 70%),linear-gradient(160deg,rgba(255,255,255,.9),rgba(246,248,252,.9));backdrop-filter:blur(8px);box-shadow:0 4px 30px rgba(26,34,51,.05)}
+  .contact h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,5vw,46px);letter-spacing:-.02em;margin-bottom:18px}
+  .contact p{color:var(--ink-dim);max-width:480px;margin:0 auto 36px;font-size:17px}
+  .contact-links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  footer{border-top:1px solid var(--line);padding:36px 0;margin-top:40px}
+  .foot-in{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12.5px;color:var(--ink-faint)}
+  .foot-in .dot{color:var(--signal-deep)}
+  @media(max-width:680px){.foot-in{flex-direction:column;gap:12px}}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    *{scroll-behavior:auto!important;animation:none!important}
+    .eyebrow,h1 span,.lede,.cta-row,.strip{opacity:1!important}
+  }
+</style>
+</head>
+<body>
+
+<div class="page-bg">
+  <div class="grid"></div>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+
+<nav id="nav">
+  <div class="brand"><span class="dot"></span>Zarvatech</div>
+  <div class="navlinks">
+    <a href="#about">about</a>
+    <a href="#services">services</a>
+    <a href="#expertise">expertise</a>
+    <a href="#contact">contact</a>
+  </div>
+</nav>
+
+<header>
+  <div class="orb a"></div>
+  <div class="orb b"></div>
+  <div class="grid-bg"></div>
+  <div class="particles" id="particles"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">SOFTWARE · AI · DIGITIZATION</div>
+        <h1><span class="l1">We build software</span><br><span class="l2">that runs your&nbsp;<span class="rotator" id="rotator"><span class="sizer">operations</span><span class="word" id="rotWord">business</span></span>.</span></h1>
+        <p class="lede">Zarvatech builds custom software, AI, and automation for real-world problems — from full-stack products to digitizing operations, with consulting and SEO to make sure what we build works and gets found. Whatever the problem, there's a system that solves it. We build it.</p>
+        <div class="cta-row">
+          <a href="#services" class="btn btn-primary">What we do →</a>
+          <a href="#contact" class="btn btn-ghost">Start a project</a>
+        </div>
+      </div>
+      <div class="term" aria-hidden="true">
+        <div class="bar"><i class="r"></i><i class="y"></i><i class="g"></i><span>zarvatech ~ deploy</span></div>
+        <div class="body" id="termBody"></div>
+      </div>
+    </div>
+    <div class="strip">
+      <div class="cell">
+        <div class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+        <div class="num">Custom software</div><div class="lbl">Built full-stack</div>
+      </div>
+      <div class="cell">
+        <div class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a2.5 2.5 0 0 0-2.5 2.5A2.5 2.5 0 0 0 7 8a2.5 2.5 0 0 0 0 5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 17 13a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 0-2.5-2.5A2.5 2.5 0 0 0 12 3z"/></svg></div>
+        <div class="num">AI-powered</div><div class="lbl">Intelligent solutions</div>
+      </div>
+      <div class="cell">
+        <div class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7l4 4 4-6 4 8 4-6"/></svg></div>
+        <div class="num">Automated</div><div class="lbl">Less manual work</div>
+      </div>
+      <div class="cell">
+        <div class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4a13 13 0 0 1 0 16M12 4a13 13 0 0 0 0 16"/></svg></div>
+        <div class="num">End-to-end</div><div class="lbl">Consult · build · rank</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about" style="padding-top:150px">
+  <!-- large graph behind the card -->
+  <div class="about-anim g-card" aria-hidden="true">
+    <svg viewBox="0 0 300 280" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <line class="edge" pathLength="1" x1="150" y1="140" x2="70"  y2="60"  style="animation-delay:.5s"/>
+        <line class="edge" pathLength="1" x1="150" y1="140" x2="240" y2="70"  style="animation-delay:1s"/>
+        <line class="edge" pathLength="1" x1="150" y1="140" x2="60"  y2="200" style="animation-delay:1.5s"/>
+        <line class="edge" pathLength="1" x1="150" y1="140" x2="230" y2="215" style="animation-delay:2s"/>
+        <line class="edge" pathLength="1" x1="150" y1="140" x2="150" y2="40"  style="animation-delay:.8s"/>
+        <line class="edge" pathLength="1" x1="70"  y1="60"  x2="150" y2="40"  style="animation-delay:2.5s"/>
+        <line class="edge" pathLength="1" x1="240" y1="70"  x2="230" y2="215" style="animation-delay:3s"/>
+        <line class="edge" pathLength="1" x1="60"  y1="200" x2="230" y2="215" style="animation-delay:3.5s"/>
+        <line class="edge" pathLength="1" x1="150" y1="40"  x2="240" y2="70"  style="animation-delay:2.7s"/>
+      </g>
+      <circle class="node"   r="4.5" cx="70"  cy="60"  style="animation-delay:.3s"/>
+      <circle class="node v" r="5"   cx="240" cy="70"  style="animation-delay:.8s"/>
+      <circle class="node c" r="4"   cx="60"  cy="200" style="animation-delay:1.3s"/>
+      <circle class="node"   r="4.5" cx="230" cy="215" style="animation-delay:1.8s"/>
+      <circle class="node v" r="3.5" cx="150" cy="40"  style="animation-delay:.55s"/>
+      <circle class="core"   r="5.5" cx="150" cy="140" style="animation:popNode 16s ease-in-out infinite"/>
+    </svg>
+  </div>
+
+  <!-- small graph, top-left corner -->
+  <div class="about-anim g-tl" aria-hidden="true">
+    <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <line class="edge" pathLength="1" x1="80" y1="80" x2="30" y2="40" style="animation-delay:5s"/>
+        <line class="edge" pathLength="1" x1="80" y1="80" x2="130" y2="55" style="animation-delay:5.4s"/>
+        <line class="edge" pathLength="1" x1="80" y1="80" x2="55" y2="130" style="animation-delay:5.8s"/>
+        <line class="edge" pathLength="1" x1="30" y1="40" x2="130" y2="55" style="animation-delay:6.6s"/>
+      </g>
+      <circle class="node c" r="4"   cx="30"  cy="40"  style="animation-delay:4.8s"/>
+      <circle class="node"   r="3.5" cx="130" cy="55"  style="animation-delay:5.2s"/>
+      <circle class="node v" r="3.5" cx="55"  cy="130" style="animation-delay:5.6s"/>
+      <circle class="core"   r="4.5" cx="80"  cy="80"  style="animation:popNode 16s ease-in-out infinite;animation-delay:4.5s"/>
+    </svg>
+  </div>
+
+  <!-- small graph, bottom-left corner -->
+  <div class="about-anim g-bl" aria-hidden="true">
+    <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <line class="edge" pathLength="1" x1="70" y1="70" x2="120" y2="35" style="animation-delay:9s"/>
+        <line class="edge" pathLength="1" x1="70" y1="70" x2="35" y2="120" style="animation-delay:9.5s"/>
+        <line class="edge" pathLength="1" x1="70" y1="70" x2="125" y2="120" style="animation-delay:10s"/>
+        <line class="edge" pathLength="1" x1="120" y1="35" x2="125" y2="120" style="animation-delay:10.8s"/>
+      </g>
+      <circle class="node v" r="3.5" cx="120" cy="35"  style="animation-delay:8.8s"/>
+      <circle class="node"   r="3.5" cx="35"  cy="120" style="animation-delay:9.3s"/>
+      <circle class="node c" r="4"   cx="125" cy="120" style="animation-delay:9.8s"/>
+      <circle class="core"   r="4.5" cx="70"  cy="70"  style="animation:popNode 16s ease-in-out infinite;animation-delay:8.5s"/>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">// 01</span>
+      <h2 class="sec-title">What Zarvatech does</h2>
+    </div>
+    <div class="about-grid reveal">
+      <div>
+        <p>Zarvatech is a software company. We build <strong>custom software and full-stack products</strong> — then layer in <strong>AI, digitization, and automation</strong> to make them smarter and remove the manual work around them.</p>
+        <p>We also <strong>consult</strong> on the hard architecture and technology decisions before a line of code is written, and handle <strong>SEO</strong> so what we ship actually gets found. Software, AI, digitization, automation, consulting, and search — the full path from idea to a product people use.</p>
+        <p>The philosophy is simple: <strong>every problem has a system that solves it.</strong> We figure out that system, then build it end to end.</p>
+      </div>
+      <div class="stack-card">
+        <h3>Core capabilities</h3>
+        <div class="chips">
+          <span class="chip hot">Software</span>
+          <span class="chip hot">AI</span>
+          <span class="chip">Digitization</span>
+          <span class="chip">Automation</span>
+          <span class="chip hot">Consulting</span>
+          <span class="chip">SEO</span>
+        </div>
+        <h3>Engineering stack</h3>
+        <div class="chips">
+          <span class="chip">Node.js</span>
+          <span class="chip">Python</span>
+          <span class="chip">Django</span>
+          <span class="chip">Angular</span>
+          <span class="chip">Elasticsearch</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">Redis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="seam"></div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">// 02</span>
+      <h2 class="sec-title">Solutions we build</h2>
+    </div>
+    <div class="svc-grid reveal">
+
+      <div class="svc">
+        <div class="ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13 5l-2 14"/></svg>
+        </div>
+        <h3>Custom Software</h3>
+        <p>Full-stack products built from scratch — web apps, backends, APIs, dashboards, and databases. Clean architecture, thoughtful data models, and code that holds up as you grow.</p>
+        <div class="tags">Web apps · APIs · Full-stack</div>
+      </div>
+
+      <div class="svc">
+        <div class="ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v1a3 3 0 0 0-3 3 3 3 0 0 0 0 6 3 3 0 0 0 3 3v1a3 3 0 0 0 6 0v-1a3 3 0 0 0 3-3 3 3 0 0 0 0-6 3 3 0 0 0-3-3V5a3 3 0 0 0-3-3z"/></svg>
+        </div>
+        <h3>AI Solutions</h3>
+        <p>Bring AI into your product where it delivers real value — intelligent assistants, document understanding, search, and data-driven features built on modern models and LLMs.</p>
+        <div class="tags">LLMs · Assistants · Smart features</div>
+      </div>
+
+      <div class="svc">
+        <div class="ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 8h4M7 12h7"/></svg>
+        </div>
+        <h3>Digitization</h3>
+        <p>Move manual, paper-heavy processes into software — and bring aging systems into modern stacks. Auditable, integrated, and faster, without losing the data you already have.</p>
+        <div class="tags">Paperless · Legacy modernization</div>
+      </div>
+
+      <div class="svc">
+        <div class="ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-4 4 3 5-7"/></svg>
+        </div>
+        <h3>Automation</h3>
+        <p>Remove the repetitive middle of your workflows — dashboards, live tracking, bulk document generation, and pipelines that do the busywork so your team doesn't have to.</p>
+        <div class="tags">Workflows · Dashboards · Reporting</div>
+      </div>
+
+      <div class="svc">
+        <div class="ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2h6c0-.8.4-1.5 1-2A7 7 0 0 0 12 2z"/></svg>
+        </div>
+        <h3>Consulting</h3>
+        <p>Sort out the hard decisions before building — architecture, stack, data model, and technical direction. Clear thinking up front that saves cost and rework later.</p>
+        <div class="tags">Architecture · Tech strategy</div>
+      </div>
+
+      <div class="svc">
+        <div class="ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        </div>
+        <h3>SEO & Web Presence</h3>
+        <p>Build products that get found — fast, well-structured sites with technical SEO baked in, so what we build reaches the people who need it.</p>
+        <div class="tags">Technical SEO · Performance</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="seam"></div>
+
+<section id="expertise">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">// 03</span>
+      <h2 class="sec-title">Areas of depth</h2>
+    </div>
+
+    <div class="proj reveal">
+      <div class="proj-idx">A—01</div>
+      <div>
+        <div class="proj-title">Custom Software Engineering</div>
+        <div class="proj-stack">Node.js · Python · Django · Angular · PostgreSQL · MongoDB · Redis</div>
+        <p class="proj-body">Full-stack products built from the ground up — backends, APIs, dashboards, and database design. Clean architecture, thoughtful data models, caching, and code that stays fast and maintainable as it scales.</p>
+        <div class="proj-metrics">
+          <div class="m"><span class="mv">Full-stack</span><span class="ml">Backend to UI</span></div>
+          <div class="m"><span class="mv">Schema-first</span><span class="ml">Solid data models</span></div>
+          <div class="m"><span class="mv">Scalable</span><span class="ml">Fast under load</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj reveal">
+      <div class="proj-idx">A—02</div>
+      <div>
+        <div class="proj-title">AI, Search & Automation</div>
+        <div class="proj-stack">Python · LLM APIs · Elasticsearch</div>
+        <p class="proj-body">AI-driven features and assistants, full-text and fuzzy search over large document sets, and automation that removes the repetitive middle of a workflow. We bring intelligence in where it measurably improves the outcome.</p>
+        <div class="proj-metrics">
+          <div class="m"><span class="mv">AI-powered</span><span class="ml">Where it earns it</span></div>
+          <div class="m"><span class="mv">Page-level</span><span class="ml">Search & indexing</span></div>
+          <div class="m"><span class="mv">Automated</span><span class="ml">Less manual work</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj reveal">
+      <div class="proj-idx">A—03</div>
+      <div>
+        <div class="proj-title">Digitization & Modernization</div>
+        <div class="proj-stack">Node.js · Python · MongoDB · PostgreSQL · Redis</div>
+        <p class="proj-body">Moving manual, paper-based processes into software, and bringing aging systems and legacy data into modern stacks — re-architecting backends, redesigning schemas, and migrating data without losing what's already there.</p>
+        <div class="proj-metrics">
+          <div class="m"><span class="mv">Paperless</span><span class="ml">Process digitization</span></div>
+          <div class="m"><span class="mv">Legacy→Modern</span><span class="ml">Re-architecture</span></div>
+          <div class="m"><span class="mv">RDBMS↔NoSQL</span><span class="ml">Data migration</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="seam"></div>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact reveal">
+      <h2>Have a problem to solve?</h2>
+      <p>Whether you need custom software, an AI layer, automation, digitization, technical advice, or better search rankings — that's what Zarvatech does.</p>
+      <div class="contact-links">
+        <a href="mailto:info@zarvatech.in" class="btn btn-primary">info@zarvatech.in</a>
+        <a href="https://linkedin.com/in/abhishek-t98/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <footer>
+      <div class="foot-in">
+        <span>Zarvatech <span class="dot">●</span> Software · AI · Automation</span>
+        <span>+91 99372 10111</span>
+      </div>
+    </footer>
+  </div>
+</section>
+
+<script>
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
+
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // hero word rotator
+  const words=['business','operations','product','workflows','team','growth'];
+  const rotWord=document.getElementById('rotWord');
+  let wi=0;
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    setInterval(()=>{
+      wi=(wi+1)%words.length;
+      rotWord.style.transition='opacity .3s,transform .3s';
+      rotWord.style.opacity='0';rotWord.style.transform='translateY(-6px)';
+      setTimeout(()=>{rotWord.textContent=words[wi];rotWord.style.opacity='1';rotWord.style.transform='none';},300);
+    },2600);
+
+    // rising particles
+    const pc=document.getElementById('particles');
+    if(pc) for(let i=0;i<24;i++){
+      const s=document.createElement('span');
+      s.style.left=Math.random()*100+'%';
+      const dur=8+Math.random()*10;
+      s.style.animationDuration=dur+'s';
+      s.style.animationDelay=(-Math.random()*dur)+'s';
+      const sz=2+Math.random()*2;
+      s.style.width=s.style.height=sz+'px';
+      if(Math.random()>.6)s.style.background='var(--violet)';
+      pc.appendChild(s);
+    }
+  }
+
+  /* ---- hero terminal typing ---- */
+  const tb=document.getElementById('termBody');
+  if(tb){
+    const reduceT=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const lines=[
+      {c:'pr',t:'zarva init --stack fullstack'},
+      {c:'cmt',t:'# scaffolding project…'},
+      {c:'ok',t:'✓ backend  ✓ database  ✓ api  ✓ ui'},
+      {c:'pr',t:'zarva add ai --model llm'},
+      {c:'ok',t:'✓ intelligence layer connected'},
+      {c:'pr',t:'zarva deploy --prod'},
+      {c:'ok',t:'✓ built in 4.2s  ·  live 🌐'},
+      {c:'cmt',t:'# ready. what will you build?'}
+    ];
+    if(reduceT){
+      tb.innerHTML=lines.map(l=>`<div class="ln ${l.c}">${l.t}</div>`).join('');
+    }else{
+      let li=0;
+      function typeLine(){
+        if(li>=lines.length){
+          setTimeout(()=>{tb.innerHTML='';li=0;typeLine();},3200);
+          return;
+        }
+        const l=lines[li];
+        const div=document.createElement('div');
+        div.className='ln '+l.c;
+        tb.appendChild(div);
+        const cursor=document.createElement('span');cursor.className='cursor';
+        div.appendChild(cursor);
+        let ci=0;
+        (function typeChar(){
+          if(ci<l.t.length){
+            cursor.insertAdjacentText('beforebegin', l.t[ci]);
+            ci++;
+            setTimeout(typeChar, 24+Math.random()*40);
+          }else{
+            cursor.remove();
+            li++;
+            setTimeout(typeLine, l.c==='pr'?260:420);
+          }
+        })();
+      }
+      typeLine();
+    }
+  }
+</script>
+</body>
+</html>
