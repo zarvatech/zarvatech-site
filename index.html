@@ -68,7 +68,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#eef1f6;
+    --bg:#eef1f7;
     --bg-elev:#ffffff;
     --line:#dde2ec;
     --line-bright:#c6cdda;
@@ -80,6 +80,10 @@
     --violet:#7c5cf5;
     --cyan:#1eb5c4;
     --amber:#e0872f;
+    --saffron:#f0872b;
+    --saffron-soft:#fdefe0;
+    --green:#1a9e5f;
+    --green-soft:#e3f5eb;
     --display:'Space Grotesk',sans-serif;
     --mono:'JetBrains Mono',monospace;
     --body:'Inter',sans-serif;
@@ -99,10 +103,10 @@
     -webkit-mask-image:linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);
     mask-image:linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);
   }
-  .page-bg .blob{position:absolute;border-radius:50%;filter:blur(120px);opacity:.07}
-  .page-bg .b1{width:400px;height:400px;background:var(--signal-deep);top:12%;left:-12%;animation:wander1 34s ease-in-out infinite}
-  .page-bg .b2{width:360px;height:360px;background:var(--violet);top:44%;right:-14%;animation:wander2 40s ease-in-out infinite}
-  .page-bg .b3{width:380px;height:380px;background:var(--signal-deep);top:78%;left:18%;animation:wander3 46s ease-in-out infinite}
+  .page-bg .blob{position:absolute;border-radius:50%;filter:blur(120px);opacity:.14}
+  .page-bg .b1{width:460px;height:460px;background:var(--signal);top:8%;left:-12%;animation:wander1 34s ease-in-out infinite}
+  .page-bg .b2{width:400px;height:400px;background:var(--saffron);top:42%;right:-14%;animation:wander2 40s ease-in-out infinite}
+  .page-bg .b3{width:420px;height:420px;background:var(--green);top:76%;left:16%;animation:wander3 46s ease-in-out infinite}
   @keyframes wander1{0%,100%{transform:translate(0,0)}50%{transform:translate(80px,60px)}}
   @keyframes wander2{0%,100%{transform:translate(0,0)}50%{transform:translate(-70px,80px)}}
   @keyframes wander3{0%,100%{transform:translate(0,0)}50%{transform:translate(60px,-70px)}}
@@ -194,6 +198,17 @@
   .btn-ghost{border-color:var(--line-bright);color:var(--ink)}
   .btn-ghost:hover{border-color:var(--signal);color:var(--signal)}
 
+  /* Proudly built in India badge */
+  .india-badge{display:inline-flex;align-items:center;gap:9px;margin-top:26px;
+    font-family:var(--mono);font-size:12.5px;letter-spacing:.03em;color:var(--ink-dim);
+    padding:8px 14px;border:1px solid var(--line);border-radius:100px;background:var(--bg-elev);
+    opacity:0;animation:up .8s .9s forwards}
+  .india-badge .tri{display:inline-flex;gap:3px}
+  .india-badge .tri i{width:6px;height:6px;border-radius:50%;display:block}
+  .india-badge .tri i:nth-child(1){background:var(--saffron)}
+  .india-badge .tri i:nth-child(2){background:#ffffff;border:1px solid var(--line-bright)}
+  .india-badge .tri i:nth-child(3){background:var(--green)}
+
   .strip{position:relative;z-index:3;margin-top:48px;margin-bottom:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;opacity:0;animation:up .8s .75s forwards}
   .strip .cell{
     position:relative;padding:22px 22px 24px;border:1px solid var(--line);border-radius:14px;overflow:hidden;
@@ -205,15 +220,20 @@
   .strip .cell::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% -20%,rgba(59,99,230,.12),transparent 60%);opacity:0;transition:opacity .35s;pointer-events:none}
   .strip .cell:hover{transform:translateY(-4px);border-color:var(--line-bright);box-shadow:0 10px 26px rgba(26,34,51,.08)}
   .strip .cell:hover::after{opacity:1}
-  .strip .cell:nth-child(2)::before{background:linear-gradient(90deg,transparent,var(--violet),transparent)}
-  .strip .cell:nth-child(4)::before{background:linear-gradient(90deg,transparent,var(--violet),transparent)}
+  .strip .cell:nth-child(2)::before{background:linear-gradient(90deg,transparent,var(--saffron),transparent)}
+  .strip .cell:nth-child(3)::before{background:linear-gradient(90deg,transparent,var(--green),transparent)}
   .strip .ci{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;margin-bottom:16px;border:1px solid var(--line-bright);color:var(--signal);background:rgba(59,99,230,.05)}
-  .strip .cell:nth-child(2) .ci,.strip .cell:nth-child(4) .ci{color:var(--violet);background:rgba(124,92,245,.05)}
+  .strip .cell:nth-child(2) .ci{color:var(--saffron);background:var(--saffron-soft)}
+  .strip .cell:nth-child(3) .ci{color:var(--green);background:var(--green-soft)}
   .strip .num{font-family:var(--display);font-weight:600;font-size:20px;color:var(--ink);letter-spacing:-.02em}
   .strip .lbl{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-top:6px;text-transform:uppercase;letter-spacing:.05em;line-height:1.4}
   @media(max-width:680px){.strip{grid-template-columns:repeat(2,1fr)}}
 
   section{padding:110px 0;position:relative}
+  /* subtle tinted section backgrounds so the page has depth, not one flat wash */
+  #services{background:linear-gradient(180deg,rgba(59,99,230,.045),rgba(240,135,43,.03) 60%,transparent)}
+  #expertise{background:linear-gradient(180deg,rgba(26,158,95,.04),transparent 70%)}
+  #about{background:linear-gradient(180deg,transparent,rgba(59,99,230,.035))}
   /* soft gradient seam between sections instead of hard borders */
   .seam{position:relative;height:1px;max-width:1100px;margin:0 auto}
   .seam::before{content:"";position:absolute;left:32px;right:32px;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--line-bright) 20%,var(--signal-deep) 50%,var(--line-bright) 80%,transparent);opacity:.6}
@@ -221,7 +241,8 @@
   @keyframes seamPulse{0%,100%{opacity:.4}50%{opacity:1}}
   .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:56px}
   .sec-tag{font-family:var(--mono);font-size:13px;color:var(--signal-deep)}
-  .sec-title{font-family:var(--display);font-weight:600;font-size:clamp(26px,4vw,40px);letter-spacing:-.02em}
+  .sec-title{font-family:var(--display);font-weight:600;font-size:clamp(26px,4vw,40px);letter-spacing:-.02em;position:relative;display:inline-block;padding-bottom:14px}
+  .sec-title::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:56px;border-radius:2px;background:linear-gradient(90deg,var(--saffron),var(--signal) 50%,var(--green))}
 
   /* ---- ABOUT ---- */
   #about{position:relative;overflow:hidden}
@@ -270,7 +291,11 @@
   .svc::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 0%,rgba(59,99,230,.08),transparent 60%);opacity:0;transition:opacity .3s}
   .svc:hover{transform:translateY(-4px);border-color:var(--line-bright);box-shadow:0 12px 30px rgba(26,34,51,.09)}
   .svc:hover::after{opacity:1}
-  .svc .ic{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;margin-bottom:18px;border:1px solid var(--line-bright);color:var(--signal);position:relative;z-index:1}
+  .svc .ic{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;margin-bottom:18px;border:1px solid var(--line-bright);color:var(--signal);position:relative;z-index:1;background:rgba(59,99,230,.05)}
+  .svc:nth-child(2) .ic,.svc:nth-child(5) .ic{color:var(--saffron);background:var(--saffron-soft)}
+  .svc:nth-child(3) .ic,.svc:nth-child(6) .ic{color:var(--green);background:var(--green-soft)}
+  .svc:nth-child(2)::before,.svc:nth-child(5)::before{background:linear-gradient(90deg,transparent,var(--saffron),transparent)}
+  .svc:nth-child(3)::before,.svc:nth-child(6)::before{background:linear-gradient(90deg,transparent,var(--green),transparent)}
   .svc h3{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:-.01em;margin-bottom:9px;position:relative;z-index:1}
   .svc p{color:var(--ink-dim);font-size:14.5px;position:relative;z-index:1}
   .svc .tags{margin-top:14px;font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);position:relative;z-index:1}
@@ -299,6 +324,12 @@
   footer{border-top:1px solid var(--line);padding:36px 0;margin-top:40px}
   .foot-in{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12.5px;color:var(--ink-faint)}
   .foot-in .dot{color:var(--signal-deep)}
+  .foot-india{display:inline-flex;align-items:center;gap:7px}
+  .foot-india .tri{display:inline-flex;gap:3px}
+  .foot-india .tri i{width:5px;height:5px;border-radius:50%;display:block}
+  .foot-india .tri i:nth-child(1){background:var(--saffron)}
+  .foot-india .tri i:nth-child(2){background:#c6cdda}
+  .foot-india .tri i:nth-child(3){background:var(--green)}
   @media(max-width:680px){.foot-in{flex-direction:column;gap:12px}}
 
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
@@ -344,6 +375,7 @@
           <a href="#services" class="btn btn-primary">What we do →</a>
           <a href="#contact" class="btn btn-ghost">Start a project</a>
         </div>
+        <div class="india-badge"><span class="tri"><i></i><i></i><i></i></span>Proudly designed &amp; built in India</div>
       </div>
       <div class="term" aria-hidden="true">
         <div class="bar"><i class="r"></i><i class="y"></i><i class="g"></i><span>zarvatech ~ deploy</span></div>
@@ -436,6 +468,7 @@
         <p>Zarvatech is a software company. We build <strong>custom software and full-stack products</strong> — then layer in <strong>AI, digitization, and automation</strong> to make them smarter and remove the manual work around them.</p>
         <p>We also <strong>consult</strong> on the hard architecture and technology decisions before a line of code is written, and handle <strong>SEO</strong> so what we ship actually gets found. Software, AI, digitization, automation, consulting, and search — the full path from idea to a product people use.</p>
         <p>The philosophy is simple: <strong>every problem has a system that solves it.</strong> We figure out that system, then build it end to end.</p>
+        <p>Proudly built in India — contributing to <strong>Digital India</strong> and the <strong>Make in India</strong> vision, one system at a time.</p>
       </div>
       <div class="stack-card">
         <h3>Core capabilities</h3>
@@ -602,6 +635,7 @@
     <footer>
       <div class="foot-in">
         <span>Zarvatech <span class="dot">●</span> Software · AI · Automation</span>
+        <span class="foot-india"><span class="tri"><i></i><i></i><i></i></span>Made in India</span>
         <span>+91 99372 10111</span>
       </div>
     </footer>
@@ -637,7 +671,9 @@
       s.style.animationDelay=(-Math.random()*dur)+'s';
       const sz=2+Math.random()*2;
       s.style.width=s.style.height=sz+'px';
-      if(Math.random()>.6)s.style.background='var(--violet)';
+      const r=Math.random();
+      if(r>.82)s.style.background='var(--saffron)';
+      else if(r>.64)s.style.background='var(--green)';
       pc.appendChild(s);
     }
   }
