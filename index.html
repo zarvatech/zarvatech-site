@@ -60,7 +60,8 @@
   ]
 }
 </script>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,7 +118,8 @@
     border-bottom:1px solid transparent;transition:border-color .3s;
   }
   nav.scrolled{border-bottom:1px solid var(--line)}
-  .brand{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.02em;display:flex;align-items:center;gap:9px}
+  .brand{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
+  .brand-logo{width:34px;height:34px;border-radius:50%;display:block;object-fit:cover}
   .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--signal);box-shadow:0 0 12px var(--signal);animation:pulse 2.4s ease-in-out infinite}
   @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.8)}}
   .navlinks{display:flex;gap:28px;font-family:var(--mono);font-size:13px;color:var(--ink-dim)}
@@ -318,7 +320,7 @@
 </div>
 
 <nav id="nav">
-  <div class="brand"><span class="dot"></span>Zarvatech</div>
+  <div class="brand"><img src="logo.png" alt="Zarvatech logo" class="brand-logo">Zarvatech</div>
   <div class="navlinks">
     <a href="#about">about</a>
     <a href="#services">services</a>
