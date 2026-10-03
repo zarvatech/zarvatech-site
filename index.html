@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://zarvatech.in/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:locale" content="en_IN">
+<meta property="og:locale" content="en">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
@@ -36,7 +36,13 @@
   "name": "Zarvatech",
   "url": "https://zarvatech.in/",
   "email": "info@zarvatech.in",
+  "telephone": "+91-99372-10111",
+  "logo": "https://zarvatech.in/logo.png",
   "description": "Zarvatech builds custom software, AI, and automation for real-world problems — plus digitization, technical consulting, and SEO.",
+  "founder": [
+    {"@type": "Person", "name": "Abhishek Tiwari", "sameAs": ["https://linkedin.com/in/abhishek-t98/", "https://medium.com/@abhishektiwari342123"]},
+    {"@type": "Person", "name": "Sidhant Tiwari", "sameAs": ["https://medium.com/@sidhanttiwari4444"]}
+  ],
   "sameAs": [
     "https://linkedin.com/in/abhishek-t98/"
   ]
@@ -80,10 +86,15 @@
     --violet:#7c5cf5;
     --cyan:#1eb5c4;
     --amber:#e0872f;
-    --saffron:#f0872b;
-    --saffron-soft:#fdefe0;
-    --green:#1a9e5f;
-    --green-soft:#e3f5eb;
+    --accent2:#0ea5a5;
+    --accent2-soft:#dff5f4;
+    --accent3:#7c5cf5;
+    --accent3-soft:#efeaff;
+    /* legacy aliases kept so existing rules still resolve */
+    --saffron:var(--accent2);
+    --saffron-soft:var(--accent2-soft);
+    --green:var(--accent3);
+    --green-soft:var(--accent3-soft);
     --display:'Space Grotesk',sans-serif;
     --mono:'JetBrains Mono',monospace;
     --body:'Inter',sans-serif;
@@ -203,11 +214,7 @@
     font-family:var(--mono);font-size:12.5px;letter-spacing:.03em;color:var(--ink-dim);
     padding:8px 14px;border:1px solid var(--line);border-radius:100px;background:var(--bg-elev);
     opacity:0;animation:up .8s .9s forwards}
-  .india-badge .tri{display:inline-flex;gap:3px}
-  .india-badge .tri i{width:6px;height:6px;border-radius:50%;display:block}
-  .india-badge .tri i:nth-child(1){background:var(--saffron)}
-  .india-badge .tri i:nth-child(2){background:#ffffff;border:1px solid var(--line-bright)}
-  .india-badge .tri i:nth-child(3){background:var(--green)}
+  .india-badge .globe-dot{width:7px;height:7px;border-radius:50%;background:var(--accent2);box-shadow:0 0 0 3px rgba(14,165,165,.18)}
 
   .strip{position:relative;z-index:3;margin-top:48px;margin-bottom:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;opacity:0;animation:up .8s .75s forwards}
   .strip .cell{
@@ -316,6 +323,23 @@
   .proj-metrics .ml{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-top:2px;text-transform:uppercase;letter-spacing:.04em}
   @media(max-width:680px){.proj{grid-template-columns:1fr;gap:12px}.proj-idx{padding-top:0}}
 
+  /* ---- SUCCESS STORIES TEASER ---- */
+  .stories{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+  .story{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;padding:30px 28px 26px;overflow:hidden;
+    background:linear-gradient(160deg,rgba(255,255,255,.92),rgba(248,250,253,.92));box-shadow:0 2px 14px rgba(26,34,51,.05);transition:transform .3s,box-shadow .3s,border-color .3s}
+  .story::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--signal),var(--accent2))}
+  .story:nth-child(2)::before{background:linear-gradient(90deg,var(--accent2),var(--violet))}
+  .story:hover{transform:translateY(-4px);box-shadow:0 16px 44px rgba(26,34,51,.1);border-color:var(--line-bright)}
+  .story .sd{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent2);margin-bottom:12px}
+  .story h3{font-family:var(--display);font-weight:600;font-size:21px;letter-spacing:-.01em;line-height:1.2;margin-bottom:12px}
+  .story p{color:var(--ink-dim);font-size:15px;margin-bottom:20px;flex:1}
+  .story .sm{display:flex;flex-wrap:wrap;gap:24px;margin-bottom:20px}
+  .story .sm b{display:block;font-family:var(--display);font-weight:700;font-size:22px;color:var(--signal);line-height:1.1}
+  .story:nth-child(2) .sm b{color:var(--violet)}
+  .story .sm span{font-family:var(--mono);font-size:11px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.04em}
+  .story .more{font-family:var(--mono);font-size:13px;color:var(--signal);font-weight:500}
+  .stories-foot{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;gap:16px;justify-content:space-between;color:var(--ink-dim);font-size:15px}
+
   /* ---- CONTACT ---- */
   .contact{text-align:center;border:1px solid var(--line);border-radius:20px;padding:72px 32px;background:radial-gradient(ellipse at 50% 0%,rgba(59,99,230,.08),transparent 70%),linear-gradient(160deg,rgba(255,255,255,.9),rgba(246,248,252,.9));backdrop-filter:blur(8px);box-shadow:0 4px 30px rgba(26,34,51,.05)}
   .contact h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,5vw,46px);letter-spacing:-.02em;margin-bottom:18px}
@@ -325,11 +349,7 @@
   .foot-in{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12.5px;color:var(--ink-faint)}
   .foot-in .dot{color:var(--signal-deep)}
   .foot-india{display:inline-flex;align-items:center;gap:7px}
-  .foot-india .tri{display:inline-flex;gap:3px}
-  .foot-india .tri i{width:5px;height:5px;border-radius:50%;display:block}
-  .foot-india .tri i:nth-child(1){background:var(--saffron)}
-  .foot-india .tri i:nth-child(2){background:#c6cdda}
-  .foot-india .tri i:nth-child(3){background:var(--green)}
+  .foot-india .globe-dot{width:5px;height:5px;border-radius:50%;background:var(--accent2)}
   @media(max-width:680px){.foot-in{flex-direction:column;gap:12px}}
 
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
@@ -356,6 +376,8 @@
     <a href="#about">about</a>
     <a href="#services">services</a>
     <a href="#expertise">expertise</a>
+    <a href="#stories">stories</a>
+    <a href="work.html">work</a>
     <a href="#contact">contact</a>
   </div>
 </nav>
@@ -375,7 +397,7 @@
           <a href="#services" class="btn btn-primary">What we do →</a>
           <a href="#contact" class="btn btn-ghost">Start a project</a>
         </div>
-        <div class="india-badge"><span class="tri"><i></i><i></i><i></i></span>Proudly designed &amp; built in India</div>
+        <div class="india-badge"><span class="globe-dot"></span>Freelance &amp; contract projects · clients in India and worldwide</div>
       </div>
       <div class="term" aria-hidden="true">
         <div class="bar"><i class="r"></i><i class="y"></i><i class="g"></i><span>zarvatech ~ deploy</span></div>
@@ -468,7 +490,8 @@
         <p>Zarvatech is a software company. We build <strong>custom software and full-stack products</strong> — then layer in <strong>AI, digitization, and automation</strong> to make them smarter and remove the manual work around them.</p>
         <p>We also <strong>consult</strong> on the hard architecture and technology decisions before a line of code is written, and handle <strong>SEO</strong> so what we ship actually gets found. Software, AI, digitization, automation, consulting, and search — the full path from idea to a product people use.</p>
         <p>The philosophy is simple: <strong>every problem has a system that solves it.</strong> We figure out that system, then build it end to end.</p>
-        <p>Proudly built in India — contributing to <strong>Digital India</strong> and the <strong>Make in India</strong> vision, one system at a time.</p>
+        <p>Zarvatech is run by engineers <strong>Abhishek Tiwari</strong> and <strong>Sidhant Tiwari</strong>. You work directly with the people who design and write the code — no account managers, no hand-offs. We take on freelance and contract work for startups, growing businesses, and public-sector teams.</p>
+        <p>Based in India, we work with clients <strong>around the world</strong> — bringing strong engineering and sharp delivery to teams wherever they are, across time zones.</p>
       </div>
       <div class="stack-card">
         <h3>Core capabilities</h3>
@@ -490,6 +513,9 @@
           <span class="chip">MongoDB</span>
           <span class="chip">PostgreSQL</span>
           <span class="chip">Redis</span>
+          <span class="chip">Local LLMs &amp; RAG</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Linux</span>
         </div>
       </div>
     </div>
@@ -591,10 +617,10 @@
       <div class="proj-idx">A—02</div>
       <div>
         <div class="proj-title">AI, Search & Automation</div>
-        <div class="proj-stack">Python · LLM APIs · Elasticsearch</div>
+        <div class="proj-stack">Node.js · Python · LLMs (hosted &amp; local) · RAG · Qdrant · Elasticsearch</div>
         <p class="proj-body">AI-driven features and assistants, full-text and fuzzy search over large document sets, and automation that removes the repetitive middle of a workflow. We bring intelligence in where it measurably improves the outcome.</p>
         <div class="proj-metrics">
-          <div class="m"><span class="mv">AI-powered</span><span class="ml">Where it earns it</span></div>
+          <div class="m"><span class="mv">Private AI</span><span class="ml">On-premise, offline LLMs</span></div>
           <div class="m"><span class="mv">Page-level</span><span class="ml">Search & indexing</span></div>
           <div class="m"><span class="mv">Automated</span><span class="ml">Less manual work</span></div>
         </div>
@@ -615,6 +641,57 @@
       </div>
     </div>
 
+    <div class="proj reveal">
+      <div class="proj-idx">A—04</div>
+      <div>
+        <div class="proj-title">Cloud, Infrastructure & DevOps</div>
+        <div class="proj-stack">AWS · Linux · networking · systemd · PM2</div>
+        <p class="proj-body">The layer underneath the app — cloud setup, Linux networking, deployment, and the reliability work that keeps systems up. We design infrastructure that is cost-efficient, verifiable, and recovers on its own when something goes wrong.</p>
+        <div class="proj-metrics">
+          <div class="m"><span class="mv">Cost-lean</span><span class="ml">Right-sized infra</span></div>
+          <div class="m"><span class="mv">Self-healing</span><span class="ml">Automated recovery</span></div>
+          <div class="m"><span class="mv">Air-gapped</span><span class="ml">Offline deployments</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="seam"></div>
+
+<section id="stories">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">// 04</span>
+      <h2 class="sec-title">Success stories</h2>
+    </div>
+    <div class="stories reveal">
+      <a class="story" href="work.html#private-ai-assistant">
+        <div class="sd">AI · RAG · On-premise</div>
+        <h3>A private AI assistant that runs with no GPU and no internet</h3>
+        <p>A government agriculture portal wanted farmers to get quick answers from dense scheme documents — on a locked-down server with no GPU, no Python, and no internet. We built a fully offline AI assistant that answers only from the official documents.</p>
+        <div class="sm">
+          <div><b>100% offline</b><span>No cloud AI calls</span></div>
+          <div><b>CPU-only</b><span>~4.3 GB RAM in total</span></div>
+        </div>
+        <span class="more">Read the story →</span>
+      </a>
+      <a class="story" href="work.html#one-server-many-ips">
+        <div class="sd">Cloud · AWS · Networking</div>
+        <h3>30 users, one server, 30 separate network identities</h3>
+        <p>Each user had to reach an external API from their own pre-registered IP address, and a server per user was far too expensive. We made a single AWS instance send every user's traffic from that user's own address — verified and self-healing.</p>
+        <div class="sm">
+          <div><b>30 → 1</b><span>Servers needed</span></div>
+          <div><b>0 leaks</b><span>Across 41 verified IPs</span></div>
+        </div>
+        <span class="more">Read the story →</span>
+      </a>
+    </div>
+    <div class="stories-foot">
+      <span>Plus trading platforms, search engines, digitization, and automation work.</span>
+      <a href="work.html" class="btn btn-ghost">See all success stories →</a>
+    </div>
   </div>
 </section>
 
@@ -624,7 +701,7 @@
   <div class="wrap">
     <div class="contact reveal">
       <h2>Have a problem to solve?</h2>
-      <p>Whether you need custom software, an AI layer, automation, digitization, technical advice, or better search rankings — that's what Zarvatech does.</p>
+      <p>Whether you need custom software, an AI layer, automation, cloud infrastructure, technical advice, or better search rankings — tell us what you're trying to solve.</p>
       <div class="contact-links">
         <a href="mailto:info@zarvatech.in" class="btn btn-primary">info@zarvatech.in</a>
         <a href="https://linkedin.com/in/abhishek-t98/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn ↗</a>
@@ -635,7 +712,7 @@
     <footer>
       <div class="foot-in">
         <span>Zarvatech <span class="dot">●</span> Software · AI · Automation</span>
-        <span class="foot-india"><span class="tri"><i></i><i></i><i></i></span>Made in India</span>
+        <span class="foot-india"><span class="globe-dot"></span>India · Worldwide</span>
         <span>+91 99372 10111</span>
       </div>
     </footer>
